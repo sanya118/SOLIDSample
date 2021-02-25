@@ -2,8 +2,9 @@ package com.school.student.entities;
 
 public class Subject {
     String name;
-    Subject(){
-        name="Maths";
+
+    Subject() {
+        name = "Maths";
     }
 
     public String getName() {

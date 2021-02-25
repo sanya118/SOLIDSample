@@ -1,12 +1,13 @@
 package com.school.student.service.io;
 
+import com.school.student.Constants;
 import com.school.student.entities.Marks;
 import com.school.student.entities.UserInput;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class InputImpl implements Input {
+public class InputServiceImpl implements InputService {
     private Scanner scanner;
     @Override
     public UserInput getInput() {
@@ -28,9 +29,9 @@ public class InputImpl implements Input {
 
     }
 
-    public String InputNeeded()
+    public String inputNeeded()
     {
-        System.out.println("Do you want to check for someone again?(y/n)");
+        System.out.println("Do you want to check for someone again?("+ Constants.NEXT_INPUT_REQUIRED_TRIGGER +"/"+Constants.NEXT_INPUT_NOT_REQUIRED_TRIGGER+")");
        String isInputNeeded=scanner.next();
        return isInputNeeded;
 

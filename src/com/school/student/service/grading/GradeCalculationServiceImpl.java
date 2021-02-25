@@ -3,7 +3,7 @@ package com.school.student.service.grading;
 import com.school.student.entities.Grade;
 import com.school.student.entities.Marks;
 
-public class GradeCalculatorImpl implements GradeCalculator {
+public class GradeCalculationServiceImpl implements GradeCalculationService {
     @Override
     public char calculateGrade(Marks marks) {
         char grade;

@@ -1,5 +1,5 @@
 package com.school.student.service.io;
 
-public interface InputTrigger {
+public interface InputTriggerService {
     Boolean continueInput(String triggerInput);
 }

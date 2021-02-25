@@ -4,11 +4,13 @@ public class UserInput {
     Student student;
     Subject subject;
     Marks marks;
+
     public UserInput() {
         student = new Student();
         subject = new Subject();
         marks = new Marks();
     }
+
     public Student getStudent() {
         return student;
     }
